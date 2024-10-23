@@ -1,7 +1,10 @@
-import { Heading } from "@chakra-ui/react";
+"use client";
+import { Box, Heading } from "@chakra-ui/react";
 
-export default function LoginPage() {
+export default function LoginPage(): JSX.Element {
   return (
-    <Heading>Hello World!</Heading>
+    <Box>
+      <Heading>Hello World!</Heading>
+    </Box>
   );
 }

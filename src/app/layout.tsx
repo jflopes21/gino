@@ -1,15 +1,11 @@
-import { Providers } from './providers'
+import { Providers } from "./providers";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode,
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }): JSX.Element {
   return (
-    <html lang='pt-br'>
+    <html lang="pt-br">
       <body>
         <Providers>{children}</Providers>
       </body>
     </html>
-  )
+  );
 }
