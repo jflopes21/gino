@@ -30,12 +30,16 @@ export default function CustomerDashboard(): JSX.Element {
       category: "Sushi",
       items: [
         {
+          id: 1,
+          categoryId: 1,
           title: "Temakinho",
           subtitle: "Temaki minúsculo",
           price: "R$ 200,00",
           imageSrc: "/sushi1.jpg",
         },
         {
+          id: 2,
+          categoryId: 1,
           title: "Camarones",
           subtitle: "Beach Camarao com pistache",
           price: "R$ 200,00",
@@ -48,6 +52,8 @@ export default function CustomerDashboard(): JSX.Element {
       category: "Hambúrgueres",
       items: [
         {
+          id: 3,
+          categoryId: 2,
           title: "Cheeseburger",
           subtitle: "Hambúrguer clássico com queijo",
           price: "R$ 150,00",
@@ -60,6 +66,8 @@ export default function CustomerDashboard(): JSX.Element {
       category: "Pizzas",
       items: [
         {
+          id: 4,
+          categoryId: 3,
           title: "Margherita",
           subtitle: "Molho de tomate, mussarela e manjericão",
           price: "R$ 180,00",
@@ -72,12 +80,16 @@ export default function CustomerDashboard(): JSX.Element {
       category: "Carnes",
       items: [
         {
+          id: 5,
+          categoryId: 4,
           title: "Frango Assado",
           subtitle: "Frango temperado com ervas",
           price: "R$ 170,00",
           imageSrc: "/chicken.jpg",
         },
         {
+          id: 6,
+          categoryId: 4,
           title: "Bife Angus",
           subtitle: "Corte especial de carne angus",
           price: "R$ 220,00",
@@ -90,12 +102,16 @@ export default function CustomerDashboard(): JSX.Element {
       category: "Massas",
       items: [
         {
+          id: 7,
+          categoryId: 5,
           title: "Spaghetti à Carbonara",
           subtitle: "Espaguete com molho cremoso de bacon",
           price: "R$ 160,00",
           imageSrc: "/pizza.jpg",
         },
         {
+          id: 8,
+          categoryId: 5,
           title: "Lasanha à Bolonhesa",
           subtitle: "Lasanha recheada com carne moída e queijo",
           price: "R$ 190,00",
@@ -108,12 +124,16 @@ export default function CustomerDashboard(): JSX.Element {
       category: "Saladas",
       items: [
         {
+          id: 9,
+          categoryId: 6,
           title: "Salada Caesar",
           subtitle: "Alface, croutons e molho Caesar",
           price: "R$ 90,00",
           imageSrc: "/sushi1.jpg",
         },
         {
+          id: 10,
+          categoryId: 6,
           title: "Salada de Frutas",
           subtitle: "Mix de frutas frescas da estação",
           price: "R$ 60,00",
@@ -126,12 +146,16 @@ export default function CustomerDashboard(): JSX.Element {
       category: "Sobremesas",
       items: [
         {
+          id: 11,
+          categoryId: 7,
           title: "Torta de Limão",
           subtitle: "Torta azeda e doce de limão",
           price: "R$ 50,00",
           imageSrc: "/tacos.jpg",
         },
         {
+          id: 12,
+          categoryId: 7,
           title: "Brownie de Chocolate",
           subtitle: "Brownie úmido com pedaços de chocolate",
           price: "R$ 55,00",
