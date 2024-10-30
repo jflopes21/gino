@@ -7,11 +7,11 @@ export default function Register(): JSX.Element {
     <Box w="100vw" h="100vh" display="flex" alignItems="center" justifyContent="center">
       <VStack gap={8}>
         <VStack>
-          <Text color="secondary.700" fontSize="32px" textAlign="center">
-            Olá! Seja muito bem vindo ao
-            <Text fontSize="36px" fontWeight="bold" color="primary.600">
+          <Text color="secondary.700" fontSize="26px" textAlign="center">
+            Olá! Seja muito bem vindo ao <br />
+            <Box as="span" fontSize="36px" fontWeight="bold" color="primary.600">
               Bar do Gino
-            </Text>
+            </Box>
           </Text>
         </VStack>
         <Box

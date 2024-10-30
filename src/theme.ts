@@ -131,6 +131,13 @@ export const theme = extendTheme({
           },
           color: "white",
         },
+        primaryReverse: {
+          backgroundColor: "red.500",
+          _hover: {
+            backgroundColor: "red.600",
+          },
+          color: "white",
+        },
         secondary: {
           backgroundColor: "white",
           _hover: {
@@ -139,6 +146,15 @@ export const theme = extendTheme({
           color: "primary.600",
           border: "1px solid",
           borderColor: "primary.600",
+        },
+        secondaryReverse: {
+          backgroundColor: "white",
+          _hover: {
+            backgroundColor: "red.50",
+          },
+          color: "red.500",
+          border: "1px solid",
+          borderColor: "red.500",
         },
       },
     },
@@ -162,5 +178,9 @@ export const theme = extendTheme({
         backgroundColor: "secondary.400",
       },
     },
+  },
+  fonts: {
+    heading: "Inter, sans-serif",
+    body: "Inter, sans-serif",
   },
 });
