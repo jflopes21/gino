@@ -2,10 +2,10 @@
   "extends": ["next/core-web-vitals", "next/typescript", "prettier"],
   "plugins": ["prettier"],
   "rules": {
-    "no-unused-vars": "warn",
     "semi": ["error", "always"],
     "@typescript-eslint/no-explicit-any": "warn",
     "@typescript-eslint/explicit-function-return-type": "warn",
+    "@typescript-eslint/no-unused-vars": "warn",
     "max-len": ["warn", { "code": 100 }],
     "quotes": ["error", "double", { "avoidEscape": true }],
     "space-before-blocks": "error",
