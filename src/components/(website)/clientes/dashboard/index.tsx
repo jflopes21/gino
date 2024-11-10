@@ -208,6 +208,10 @@ export default function CustomerDashboard(): JSX.Element {
     }
   };
 
+  const handleConsultOrder = (): void => {
+    router.push("/clientes/pedido");
+  };
+
   const handleSelectItem = (id: number): void => {
     router.push(`/clientes/produto/${id}`);
   };
@@ -279,6 +283,9 @@ export default function CustomerDashboard(): JSX.Element {
                   Chamar atendente
                 </Button>
               )}
+              <Button w='60%' variant='secondary' onClick={handleConsultOrder}>
+                Consultar Pedido
+              </Button>
               {isCloseAccountButtonClicked ? (
                 <Button w='60%' variant='primaryReverse' onClick={handleCloseAccountButton}>
                   Cancelar fechamento
