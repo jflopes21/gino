@@ -13,11 +13,12 @@ import {
   VStack
 } from "@chakra-ui/react";
 import { MessageSquareMore, Minus, Plus } from "lucide-react";
-import { useParams } from "next/navigation";
+import { useParams, useRouter } from "next/navigation";
 import { useState } from "react";
 
 export default function SelectedProduct(): JSX.Element {
   const { id } = useParams();
+  const router = useRouter();
   const product = {
     id: id,
     categoryId: 1,
@@ -89,6 +90,10 @@ export default function SelectedProduct(): JSX.Element {
 
   const updateTotalPrice = (quantity: number): void => {
     setTotalPrice(product.price * quantity);
+  };
+
+  const handleAddToChart = (): void => {
+    router.push("/clientes/carrinho");
   };
 
   const handlePlusButton = (): void => {
@@ -213,7 +218,9 @@ export default function SelectedProduct(): JSX.Element {
               onClick={handlePlusButton}
             />
           </HStack>
-          <Button variant='primary'>Adicionar R$ {totalPrice.toFixed(2).replace(".", ",")}</Button>
+          <Button onClick={handleAddToChart} variant='primary'>
+            Adicionar R$ {totalPrice.toFixed(2).replace(".", ",")}
+          </Button>
         </HStack>
       </Box>
     </Box>
