@@ -13,9 +13,9 @@ import { Lock, Mail } from "lucide-react";
 
 export default function LoginPage(): JSX.Element {
   return (
-    <Box w='100vw' h='100vh' display='flex' alignItems='center' justifyContent='center'>
+    <Box w='full' h='100vh' display='flex' alignItems='center' justifyContent='center'>
       <VStack gap={8}>
-        <Image alt='Logo Gino' src='/logo.png' boxSize='400px' h='100px' objectFit='cover' />
+        <Image alt='Logo Gino' src='/logo.png' boxSize='200px' h='50px' objectFit='cover' />
         <Box
           boxShadow='lg'
           p={6}
@@ -23,8 +23,7 @@ export default function LoginPage(): JSX.Element {
           gap={4}
           display='flex'
           flexDirection='column'
-          minW='400px'
-          minH='250px'
+          w='full'
           mb={40}>
           <Text fontSize='28px' fontWeight='bold' color='secondary.500'>
             Login

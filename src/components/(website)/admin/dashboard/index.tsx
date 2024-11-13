@@ -11,8 +11,14 @@ import {
   Box,
   Heading
 } from "@chakra-ui/react";
+import { useRouter } from "next/navigation";
 
 export default function AdminDashboard(): JSX.Element {
+  const router = useRouter();
+  const handleTableRegistration = (): void => {
+    router.push("/admin/mesas");
+  };
+
   return (
     <Box w='full' h='100vh' px={8} display='flex' alignItems='center' pb={8}>
       <Card size='md' w='full' pt={4} position='relative' p={8}>
@@ -44,8 +50,8 @@ export default function AdminDashboard(): JSX.Element {
             <Button w='60%' variant='secondary'>
               Funcionários
             </Button>
-            <Button w='60%' variant='secondary'>
-              Mesas
+            <Button w='60%' variant='secondary' onClick={handleTableRegistration}>
+              Cadastro de mesas
             </Button>
             <Button w='60%' variant='secondary'>
               Cardápio

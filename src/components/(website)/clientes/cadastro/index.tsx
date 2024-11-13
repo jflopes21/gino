@@ -1,8 +1,13 @@
 "use client";
 import { Box, Button, Input, InputGroup, Text, VStack, InputLeftElement } from "@chakra-ui/react";
 import { Calendar, IdCard, Phone, UserRound } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export default function Register(): JSX.Element {
+  const router = useRouter();
+  const handleBegin = (): void => {
+    router.push("/clientes/dashboard");
+  };
   return (
     <Box w='100vw' h='100vh' display='flex' alignItems='center' justifyContent='center'>
       <VStack gap={8}>
@@ -56,7 +61,7 @@ export default function Register(): JSX.Element {
                 />
               </InputGroup>
             </VStack>
-            <Button w='full' variant='primary'>
+            <Button w='full' variant='primary' onClick={handleBegin}>
               Começar
             </Button>
           </VStack>
